@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a> | <a href="#about">About</a> |
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section>
+        <article>
+            <h2>My Simple Introduction</h2>
+            <p>This is an article about web development.</p>
+        </article>
+    </section>
+
+    <table border="1">
+        <tr>
+            <th colspan="2">Personal Information</th>
+        </tr>
+        <tr>
+            <td>Name</td><br>
+            <td>John Wick</td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>22 years old</td>
+        </tr>
+        <tr>
+            <td>Occupation</td><br>
+            <td>student</td>
+        </tr>
+    </table>
+
+    <h2>Contact information</h2>
+    <form action="submit_form.php" method="post">
+        <label for="name">Name: </label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email: </label><br>
+        <input type="text" id="email" name="email"><br><br>
+
+        <label for="gender">Gender: </label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male </label><br>
+        <input type="radio" id="female" name="gender" value="female" <label for="female">Female </label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form action="submit_form.php" method="post"><br><br>
+        <label for="hobby">Select your hobbies: </label><br>
+        <input type="checkbox" id="hobby1" name="hobby1" value="Reading" <label for="hobby1">Reading</label><br>
+        <input type="checkbox" id="hobby2" name="hobby2" value="Gaming" <label for="hobby2">Gaming</label><br>
+        <input type="checkbox" id="hobby3" name="hobby3" value="Coding" <label for="hobby3">Coding</label><br>
+        <label for="character">Choose a character: </label>
+        <select id="character" name="character">
+            <option value="introvert">Introvert</option>
+            <option value="extrovert">Extrovert</option>
+            <option value="ambivert">Ambivert</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+        <footer>
+            <p>Copyright © 2024 My Web Page</p>
+        </footer>
+</body>
+
+</html>
