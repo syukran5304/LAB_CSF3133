@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportation Survey</title>
+</head>
+<body>
+    <div id="Header" style="background-color: darkmagenta; height: 100px;
+    text-align: center; line-height: normal;" >
+    <h1>Survey About Student Transportation</h1>
+    <span>Estimation money spending on transport</span><br>
+    <em>Method to reach UMT</em>
+    </div> 
+
+    <div id="Content" style="background-color: rgb(19, 207, 192); width: auto; float: left;
+    width: 100%; text-align: center; height: 380px;">
+    <h2>Contact Information</h2>
+    <form action="">
+        Name: <input type="text" name="nama"
+        placeholder="Masukkan nama anda di sini." autofocus
+        autocomplete>
+        <br>
+        <br>
+        Email: <input type="email" name="user email"
+        placeholder="Tulis email anda">
+        <br>
+        <br>
+        <form action="submit_form.php" method="post">
+        <label for="gender">Gender: </label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male </label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female </label><br><br>
+        </form>
+        Date: <input type="date" name="tarikh">
+        <br><br>
+        <label for="Your Transportation">Choose a transportation: </label>
+        <select id="Your transport" name="transport">
+            <option value="introvert">Car</option>
+            <option value="extrovert">Motorcycle</option>
+            <option value="ambivert">Walking</option>
+            <option value="ambivert">Grab/Maxim</option>
+        </select><br><br>
+        Satisfication: <input  type="range" id="satisfication"
+        min="0" max="10" value="0">10
+        <br>
+        <br>
+        <input type="submit" name="submit">
+    </form>
+    <div id="Inline Calculator" style="background-color: rgb(99, 241, 17); line-height: 30px;
+    height: 130px;">
+        <h2>Calculator</h2>
+        <form oninput="z.value=parseInt(num1.value) + 
+        parseInt(num2.value)">
+        <input id="num1" type="number" value="0">  + 
+        <input id="num2" type="number" value="0"> = 
+        <output name="z" for="num1 num2"></output>
+    </form>
+    <form oninput="z.value=parseInt(num3.value) - 
+        parseInt(num4.value)">
+        <input id="num3" type="number" value="0">  - 
+        <input id="num4" type="number" value="0"> = 
+        <output name="z" for="num3 num4"></output>
+    </form>
+    </div>
+     <div id="footer" style="background-color: rgb(221, 96, 134); width: auto; clear: left;
+    width: 100%; text-align: center; height: 50px;" >
+    &copy; By Syukran, S75572 &reg;
+     </div>
+</body>
+</html>
