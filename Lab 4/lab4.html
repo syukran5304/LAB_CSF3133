@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 4 Webpage</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS -->
+<style>
+    header {
+            background-color: #101d61;
+            color: rgb(221, 82, 82);
+            padding: 20px;
+            text-align: center;
+        }
+    nav ul {
+            list-style-type: none;
+            background-color: #a525d8;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+    nav li {
+            float: right;
+        }
+    nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    nav li a:hover {
+            background-color: #111;
+        }
+    section, article {
+            margin: 20px;
+        }
+    video {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /*  main content */
+    main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 40px;
+            margin: 20px;
+        }
+
+        /* Home + About */
+        .left-content {
+            flex: 2;
+        }
+
+        /* media section */
+        #media {
+            flex: 1;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        /* StailLink*/
+        a:link{color: rgb(214, 19, 19);}/* unvisited link*/
+        a:visited{color: rgb(47, 216, 31);}/* visited link*/
+        a:hover{color: rgb(216, 51, 180);}/* mouse over link*/
+        a:active{color: rgb(55, 112, 197);}/* selected link*/
+</style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lab 4 Webpage</h1>
+        <h2>Food Webpage</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="left-content">
+        <section id="home">
+        <article>
+            <h2>Home</h2>
+            <h3>Introducing some food recipes from the entire world!</h3>
+            <p>this is the source you can refer:</p>
+            <p><b><a href="https://resepichenom.com/" target="_self">
+            CLick here for external website.</a></b></p>
+            </article>
+            </section>
+
+            <section id="about">
+            <article>
+                <h2>About</h2>
+                <form action="">
+                Name: <input type="text" name="nama"
+                placeholder="Masukkan nama anda di sini." autofocus autocomplete>
+                <br><br>
+                Email: <input type="email" name="user email"
+                placeholder="Tulis email anda">
+                <br><br>
+                <label for="gender">Gender: </label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br><br>
+                Favorite Hobbies: <input type="text" name="user hobbies"
+                placeholder="Insert your hobby">
+                <br><br>
+                <input type="submit" name="submit">
+                </form>
+                </article>
+            </section>
+        </div>
+
+        <!-- Video section-->
+        <section id="media">
+            <article>
+            <h2>Malaysian Popular Cuisine</h2>
+            <p>Making of Nasi Lemak:</p>
+            <video controls>
+                <source src="Nasi Lemak.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Lab 4 Webpage. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
