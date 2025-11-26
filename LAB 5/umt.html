@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UMT</title>
+    <link rel="stylesheet" href="umtStyle.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <ul class="navbar">
+        <li class="logo"><img src="WEB-LOGO-UMT.webp" alt="UMT Logo"></li>
+        <li><a href="#home">Home</a></li>
+        
+        <li class="dropdown">
+        <a href="#">About UMT ▼</a>
+        <ul class="dropdown-content">
+            <li><a href="https://www.umt.edu.my/vmfo-2/">Vision & Mission</a></li>
+            <li><a href="#">History of UMT</a></li>
+            <li><a href="#">Logo & Corporate Image</a></li>
+            <li><a href="#">Organization Chart</a></li>
+            <li><a href="#">University Governance</a></li>
+            <li><a href="#">Departments</a></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+            <a href="#">Study ▼</a>
+            <ul class="dropdown-content">
+            <li><a href="#">STEM Foundation</a></li>
+            <li><a href="https://www.umt.edu.my/diploma-bachelor-study/">Bachelor</a></li>
+            <li><a href="#">Master</a></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+        <a href="#">Research ▼</a>
+        <ul class="dropdown-content">
+            <li><a href="https://www.umt.edu.my/umt-wise/">UMT Wise</a></li>
+            <li><a href="#">Publications</a></li>
+            <li><a href="#">Innovation & Patent</a></li>
+        </ul>
+        </li>
+        <li class="dropdown">
+        <a href="#">Student & Campus Life ▼</a>
+        <ul class="dropdown-content">
+            <li><a href="#">Facilities</a></li>
+            <li><a href="#">Co-Curriculum</a></li>
+            <li><a href="#">Accommodation</a></li>
+        </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- Search -->
+        <li class="search-container">
+        <form id="searchForm" action="#" method="GET">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit">🔍</button>
+        </form>
+        </li>
+    </ul>
+    <!-- HERO -->
+    <section class="hero">
+        <img id="shuffleImage" src="welcome.jpg" class="fade-image" alt="UMT Welcome Image">
+        <div class="controls">
+            <button id="prevBttn">&#10094;</button>
+            <button id="nextBttn">&#10095;</button>
+        </div>
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="hero-content">
+            <h1>Welcome to University Malaysia Terengganu</h1>
+            <p>Your gateway to excellence in education</p>
+        </div>
+    </section>
+    <!-- NEWS SECTION -->
+    <section class="news-section">
+        <h2 class="section-title">LATEST NEWS</h2>
+        <span class="subtitle">News About UMT</span>
+        <a class="see-all" href="#">See All News</a>
+
+        <div class="news-container">
+        <!-- Big News -->
+        <div class="big-news">
+            <img src="coral.jpg" alt="Coral Reef" class="big-img">
+            <h3>UMT RESEARCHER RECEIVES RM460,000 GRANT FOR CORAL REEF CONSERVATION</h3>
+            <p class="date">November 11, 2025</p>
+            <p class="desc">UMT Researcher receives RM460,000 grant for coral reef conservation.</p>
+        </div>
+        <!-- Side News -->
+        <div class="side-news">
+        <div class="news-item">
+            <img src="logistics.webp" alt="Logistics">
+            <div>
+            <h4>UMT LEADS NATIONAL LOGISTICS CONSORTIUM</h4>
+            <p class="date">November 9, 2025</p>
+            </div>
+            </div>
+        <div class="news-item">
+            <img src="mangrove.webp" alt="Mangrove">
+        <div>
+            <h4>UMT LAUNCHES ON-CAMPUS MANGROVE EDUCATION PARK</h4>
+            <p class="date">November 6, 2025</p>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright © |2024 Unofficial UMT Website|</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
