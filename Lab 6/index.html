@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>General Knowledge Quiz</h1>
+    </header>
+    <main>
+        <section id="start-screen">
+            <h2>Ready to begin?</h2>
+            <button id="start-btn" onclick="startQuiz()">Start Quiz</button>
+        </section>
+        <section id="quiz-section" class="hidden">
+            <div id="timer">Time Left: <span id="time">10</span>s</div>
+            <div id="question"></div>
+            <div id="options"></div>
+            <div id="feedback"></div>
+            <div class="button-row">
+            <button id="giveup-btn" onclick="showPopup()" class="danger">Give Up</button>
+            <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+            </div>
+        </section>
+        <section id="score-section" class="hidden">
+            <h2>Your Score:</h2>
+            <p id="final-score"></p>
+            <button onclick="goToStart()">Back to Start</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Quiz App By Syukran</p>
+    </footer>
+    <div id="confirm-popup" class="popup hidden">
+        <div class="popup-box">
+            <p>Are you sure you want to give up?</p>
+            <button class="yes-btn" onclick="confirmGiveUp()">Yes</button>
+            <button class="no-btn" onclick="cancelGiveUp()">No</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
