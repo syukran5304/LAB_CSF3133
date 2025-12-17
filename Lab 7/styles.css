@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e9eef3; /* soft gray-blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px; /* space around content */
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff; /* white card background */
+    padding: 15px; /* space between image and card */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.55); /* readable overlay */
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 24px;
+    text-align: center;
+}

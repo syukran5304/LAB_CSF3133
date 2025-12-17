@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: darkgrey;
+}
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+.top-nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.top-nav a:hover {
+    text-decoration: underline;
+}
+.hero {
+    margin-top: 60px;
+    position: relative;
+    height: 350px;
+    background: url("https://picsum.photos/900/400") center/cover;
+}
+.hero-text {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.login-form {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.login-form input {
+    padding: 8px;
+    margin: 5px;
+}
+.login-form button {
+    padding: 8px 12px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.slideshow {
+    margin: 30px;
+}
+.slide {
+    display: none;
+    width: 100%;
+}
+.slide.active {
+    display: block;
+}
+.profile-card {
+  width: 250px;
+  padding: 20px;
+  background: #f4f4f4;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+.profile-card img {
+    border-radius: 50%;
+}
+.profile-card p {
+    margin: 5px 0;
+}
+.social span {
+    font-size: 20px;
+    margin: 5px;
+}
+.progress-container {
+    width: 300px;
+    background: #ddd;
+    height: 25px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: green;
+    border-radius: 20px;
+}
+.collapsible {
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+.collapsible-content {
+    display: none;
+    padding: 10px;
+    background: #eee;
+}
+footer{
+    background-color: grey;
+    text-align: center;
+    padding: 10px;
+}

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px; /* jarak dari tepi */
+}
+
+.container {
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collapsible {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.collapsible:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+    display: none;
+}
+
+.content.show {
+    display: block;
+}
